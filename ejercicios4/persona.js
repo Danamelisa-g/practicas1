@@ -1,10 +1,10 @@
-class persona{
+class Persona{
     constructor(nombre,edad,profesion){
         this.nombre = nombre;
         this.edad = edad;
         this.profesion = profesion;
     }
-    deswcripcion(){
+    descripcion(){
         console.log(`me llamo ${this.nombre} tengo ${this.edad} soy ${this.profesion}`)
     }
     esmayorDeEdad(){
@@ -12,3 +12,6 @@ class persona{
     }
 
 }
+const p1 = new Persona("ana",24,chef)
+p1.presentarse();
+console.log(p1.esmayorDeEdad());
